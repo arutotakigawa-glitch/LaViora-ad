@@ -41,6 +41,15 @@
         emit('line_outbound_intent', params);
     };
     document.addEventListener('click', click);
+    const protectedCaseImage = (target) => target?.closest?.('.case-media img');
+    document.addEventListener('dragstart', (event) => {
+        if (protectedCaseImage(event.target))
+            event.preventDefault();
+    });
+    document.addEventListener('contextmenu', (event) => {
+        if (protectedCaseImage(event.target))
+            event.preventDefault();
+    });
     const observer = new IntersectionObserver((entries) => {
         if (entries.some((e) => e.isIntersecting))
             once('ba_reached');
