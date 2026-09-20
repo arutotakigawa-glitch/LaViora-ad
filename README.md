@@ -1,3 +1,3 @@
-# LaViora広告
+# LaViora_Meta広告v1
 
-`LaViora広告` フォルダ内の静的HTMLサイトをGitHub Pagesへ自動公開します。
+`LaViora_Meta広告v1` フォルダ内の静的HTMLサイトをGitHub Pagesへ自動公開します。

@@ -1,4 +1,4 @@
-name: Deploy LaViora広告 to GitHub Pages
+name: Deploy LaViora_Meta広告v1 to GitHub Pages
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: LaViora広告
+          path: LaViora_Meta広告v1
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
