@@ -41,7 +41,7 @@
         emit('line_outbound_intent', params);
     };
     document.addEventListener('click', click);
-    const protectedCaseImage = (target) => target?.closest?.('.case-media img');
+    const protectedCaseImage = (target) => target?.closest?.('.case-media');
     document.addEventListener('dragstart', (event) => {
         if (protectedCaseImage(event.target))
             event.preventDefault();
