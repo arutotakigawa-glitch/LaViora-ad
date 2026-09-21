@@ -5,7 +5,9 @@
 V1 は別フォルダのまま維持。公開ルートは従来どおり V1、V2 は /v2/。V2 は比較・確認用に noindex を指定（アクセス制限ではありません）。
 
 ## Sources
-- お客様の声と写真：https://laviora-clinical.jp/voice/66/ 、/voice/86/ 、/voice/99/ 、/voice/97/ 、/voice/94/ 、/voice/90/ （2026-09-21確認）
+- お客様の声：添付画像と公式掲載写真を照合し、https://laviora-clinical.jp/voice/70/ 、/voice/99/ 、/voice/66/ 、/voice/91/ 、/voice/88/ の5名を添付順に掲載。画像はユーザー提供のWebPを無加工で利用。（2026-09-21確認）
+
+冒頭に実例のBefore/Afterを配置。肌荒れ解説は要約と比較図を常時表示し、詳しい習慣の解説は開閉式に変更。離脱率の改善は未計測であり、効果を保証するものではありません。
 - 肌のバリア機能：https://dermnetnz.org/topics/skin-barrier-function
 - 乾燥肌のケア：https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin
 - ニキビの仕組み：https://www.aad.org/public/diseases/acne/causes/acne-causes

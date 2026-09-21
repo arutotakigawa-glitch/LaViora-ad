@@ -52,7 +52,7 @@
     },
     { threshold: 0.25 },
   );
-  const first = document.querySelector('[data-case="1"]');
+  const first = document.querySelector('.hero-comparison') || document.querySelector('[data-case="1"]');
   if (first) observer.observe(first);
   const sticky = document.getElementById("sticky-cta");
   const stickyObserver = new IntersectionObserver(
