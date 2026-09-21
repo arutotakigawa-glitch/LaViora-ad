@@ -81,24 +81,59 @@
 .audit-v2 .compact-skin h2 {
   font-size: clamp(20px, 5.3vw, 25px);
 }
-.audit-cause-summary {
-  margin: 20px 0 18px;
+.audit-v2 .compact-skin h2 br,
+.audit-v2 .skin-cause h3 br {
+  display: block;
+}
+.audit-v2 .compact-skin-intro {
+  font-size: 14px;
+}
+.skin-cause {
+  padding: 22px 0;
   border-top: 1px solid #d5c4aa;
 }
-.audit-cause-summary p {
-  display: flex;
-  flex-direction: column;
-  padding: 12px 0;
-  border-bottom: 1px solid #d5c4aa;
-  gap: 3px;
-  line-height: 1.75;
-}
-.audit-cause-summary b {
-  font-size: 12px;
+.skin-cause .skin-cause-label {
   color: #806641;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0 0 8px;
 }
-.audit-cause-summary span {
+.audit-v2 .skin-cause h3 {
+  font-size: 20px;
+  line-height: 1.75;
+  margin: 0 0 12px;
+}
+.skin-cause > p:not(.skin-cause-label):not(.skin-diagram-note) {
+  font-size: 14px;
+  line-height: 1.95;
+}
+.audit-v2 .skin-cause .skin-panels {
+  margin: 18px 0 8px;
+}
+.skin-cause .skin-diagram-note {
+  font-size: 10px;
+  color: #786954;
+  line-height: 1.8;
+}
+.skin-cause-takeaway {
+  background: #ede3d4;
+  border-top: 2px solid #b59b72;
+  padding: 20px 18px;
+  margin: 0 0 24px;
+}
+.skin-cause-takeaway > p:last-child {
   font-size: 13px;
+  line-height: 2;
+}
+.skin-cause-takeaway .audit-bridge {
+  margin: 0 0 12px;
+}
+.skin-source-note {
+  font-size: 11px;
+  line-height: 1.85;
+  color: #786954;
+  margin-top: 12px;
 }
 .audit-bridge {
   font-family: var(--serif);
@@ -191,38 +226,6 @@
 .audit-promises a {
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-.audit-price-jump {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 10px 16px;
-  margin-top: 28px;
-  padding: 20px;
-  background: #e7d8c0;
-  border: 1px solid #bba078;
-  align-items: center;
-}
-.audit-price-jump > span:first-child {
-  font-size: 13px;
-  line-height: 1.8;
-}
-.audit-price-jump small {
-  font-size: 10px;
-  font-weight: 400;
-}
-.audit-price-jump strong {
-  font-family: Georgia, serif;
-  font-size: 33px;
-  font-weight: 400;
-  line-height: 1.2;
-}
-.audit-price-jump .jump-label {
-  grid-column: 1/-1;
-  font-size: 12px;
-  border-top: 1px solid #bba078;
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
 }
 .audit-v2 .voice-gallery .v2-voice-body {
   padding: 20px 18px;
@@ -512,6 +515,9 @@
   scroll-margin-top: 16px;
 }
 @media (max-width: 360px) {
+  .audit-v2 .skin-cause h3 {
+    font-size: 18px;
+  }
   .audit-v2 .reason-card h3,
   .audit-v2 .care-choice-intro h3 {
     font-size: 18px;

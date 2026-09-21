@@ -49,3 +49,14 @@ V2のnoindexは検索掲載を抑える指定であり、閲覧制限ではな�
 - [公式料金](https://laviora-clinical.jp/price/)
 - [公式FAQ](https://laviora-clinical.jp/faq/)
 - 肌の解説の参照先はV2 READMEおよびページ内の詳細説明に記載。
+
+## 同日追加修正：原因の説明と外部遷移
+
+ユーザー確認後、以下を追加修正。上記の料金ショートカットの追加方針は、この指示で取り消し。
+
+- 「肌質改善の提案」が先行していた原因章を改稿。「なぜ、また肌が荒れるの？」を入口に、角層の役割とうるおい不足、摩擦・ケアの刺激、皮脂・古い角質による毛穴の詰まりを説明。原因の本文はすべて常時表示し、その後に肌と習慣の確認、施術選択へつなぐ。
+- 比較図は流用。ホームケアが無意味という表現や、ハーブピーリングがすべての原因を解消するという表現は用いない。
+- 対策章直下の5,800円の初回案内カードを削除。後半の正式なオファー章は維持。
+- プロフィール・会社紹介、体験談5件、医学資料への外部リンクを削除。LP本文の外部リンクは予約用LINEのみ。副社長の経歴・メッセージと体験談本文は維持。
+- 原因の説明は [AAD：ニキビの原因](https://www.aad.org/public/diseases/acne/causes/acne-causes)、[AAD：ケアによる刺激](https://www.aad.org/public/diseases/acne/skin-care/habits-stop)、[AAD：乾燥肌](https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin)、[DermNet：皮膚バリア機能](https://dermnetnz.org/topics/skin-barrier-function) と照合。
+- 幅320・375・390・430・1280pxで再確認。原因3項目の常時表示、不要カードの削除、LINE以外の外部リンクがないこと、画像・ページ内リンク・症例スライド・太字・タグ配置を自動検査。原因章のスマホ表示を目視確認。
