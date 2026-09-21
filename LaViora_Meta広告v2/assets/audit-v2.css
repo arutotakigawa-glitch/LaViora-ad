@@ -120,7 +120,7 @@
   background: #ede3d4;
   border-top: 2px solid #b59b72;
   padding: 20px 18px;
-  margin: 0 0 24px;
+  margin: 0;
 }
 .skin-cause-takeaway > p:last-child {
   font-size: 13px;
@@ -128,12 +128,6 @@
 }
 .skin-cause-takeaway .audit-bridge {
   margin: 0 0 12px;
-}
-.skin-source-note {
-  font-size: 11px;
-  line-height: 1.85;
-  color: #786954;
-  margin-top: 12px;
 }
 .audit-bridge {
   font-family: var(--serif);

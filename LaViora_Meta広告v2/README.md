@@ -9,7 +9,7 @@ V1 は別フォルダのまま維持。公開ルートは従来どおり V1、V2
 ## Sources
 - お客様の声：添付画像と公式掲載写真を照合し、https://laviora-clinical.jp/voice/70/ 、/voice/99/ 、/voice/66/ 、/voice/91/ 、/voice/88/ の5名を添付順に掲載。画像はユーザー提供のWebPを無加工で利用。（2026-09-21確認）
 
-冒頭に実例のBefore/Afterを配置。肌荒れ解説は「うるおい不足」「摩擦・ケアの刺激」「皮脂・毛穴の詰まり」の原因と比較図を常時表示。症状が強い・長引く場合の案内のみ開閉式。LPからの外部遷移は予約用LINEのみとし、会社紹介・体験談・医学資料のリンクは外しています（参照元は本READMEに保持）。離脱率の改善は未計測であり、効果を保証するものではありません。
+冒頭に実例のBefore/Afterを配置。肌荒れ解説は「うるおい不足」「摩擦・ケアの刺激」「皮脂・毛穴の詰まり」の原因と比較図を常時表示。原因章末尾の注意書き・開閉枠はユーザー指示で削除。LPからの外部遷移は予約用LINEのみとし、会社紹介・体験談・医学資料のリンクは外しています（参照元は本READMEに保持）。離脱率の改善は未計測であり、効果を保証するものではありません。
 - 肌のバリア機能：https://dermnetnz.org/topics/skin-barrier-function
 - 乾燥肌のケア：https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin
 - ニキビの仕組み：https://www.aad.org/public/diseases/acne/causes/acne-causes
