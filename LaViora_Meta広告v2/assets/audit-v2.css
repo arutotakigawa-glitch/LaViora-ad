@@ -73,16 +73,6 @@
 .audit-v2 .v2-empathy .v2-emphasis {
   margin-top: 16px;
 }
-.empathy-illustration {
-  margin: 22px 0 4px;
-  overflow: hidden;
-  border: 1px solid #dbcbb5;
-}
-.empathy-illustration img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 .audit-v2 .v2-empathy h2 br,
 .audit-v2 .quality h2 br,
 .audit-v2 .reason-card h3 br {
@@ -168,69 +158,77 @@
 .audit-v2 .reason-card > div > p:last-of-type {
   font-size: 14px;
 }
-.ingredient-feature {
-  margin-top: 20px;
-  padding: 22px 18px;
-  border: 1px solid #bea781;
-  background: linear-gradient(135deg, #f5eee3, #ece0ce);
+.method-title-context,
+.method-title-main {
+  display: block;
 }
-.ingredient-feature .ingredient-eyebrow {
-  font-size: 10px;
-  letter-spacing: 0.16em;
-  font-weight: 700;
-  color: #806641;
+.method-title-context {
+  font-size: 18px;
+  line-height: 1.85;
+  margin-bottom: 6px;
 }
-.ingredient-feature .ingredient-name {
-  font-family: Georgia, serif;
-  font-size: 58px;
-  font-weight: 400;
-  color: #806641;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  margin: 12px 0;
+.method-title-context > span {
+  display: inline-block;
 }
-.ingredient-feature .ingredient-fullname {
-  font-size: 11px;
-  color: #786954;
-  line-height: 1.9;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #cdbda4;
-}
-.audit-v2 .ingredient-feature h3 {
-  margin: 16px 0 12px;
-  font-size: 21px;
+.method-title-main {
+  font-size: clamp(23px, 5.8vw, 27px);
+  letter-spacing: 0.01em;
   line-height: 1.7;
 }
-.ingredient-feature .ingredient-description {
+.method-philosophy {
+  margin: 20px 0 24px;
+  padding-left: 16px;
+  border-left: 2px solid #b89a6e;
+}
+.audit-v2 .method-philosophy h3 {
+  margin: 0 0 12px;
+}
+.method-philosophy p {
   font-size: 14px;
   line-height: 1.95;
 }
-.ingredient-actions {
-  margin: 20px 0 26px;
+.method-principles {
+  margin-bottom: 26px;
+  border-bottom: 1px solid #cdbb9f;
 }
-.ingredient-actions > div {
-  padding: 18px 0;
-  border-bottom: 1px solid #d8c8b4;
+.method-principle {
+  padding: 22px 0;
+  border-top: 1px solid #cdbb9f;
 }
-.ingredient-actions dt > span,
-.ingredient-actions dt > b {
-  display: block;
-}
-.ingredient-actions dt > span {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: #806641;
-  margin-bottom: 5px;
-}
-.ingredient-actions dt > b {
+.method-principle .method-principle-label {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 14px;
   font-family: var(--serif);
-  font-size: 17px;
+  font-size: 23px;
   font-weight: 500;
-  line-height: 1.8;
+  color: #806641;
+  line-height: 1.6;
+  margin: 0 0 12px;
 }
-.ingredient-actions dd {
+.method-principle-label > span {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+.method-principle h4 {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.85;
+  margin: 0 0 8px;
+}
+.method-principle
+  > p:not(.method-principle-label):not(.method-ingredient-note) {
   font-size: 14px;
+  line-height: 1.95;
+  margin: 0;
+}
+.method-principle > .method-ingredient-note {
+  font-size: 11px;
+  color: #786954;
   line-height: 1.95;
   margin: 10px 0 0;
 }
