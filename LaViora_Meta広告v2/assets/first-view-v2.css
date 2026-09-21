@@ -1,24 +1,107 @@
 .v2-closing .vice-portrait {
-  margin: 26px 0 30px;
-  border: 1px solid #d1c0a5;
-  background: #fffaf2;
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  margin: 26px 0 0;
+  padding: 22px 0;
+  border: 0;
+  border-top: 1px solid #bda57d;
+  background: transparent;
 }
 .v2-closing .vice-portrait img {
   display: block;
   width: 100%;
-  aspect-ratio: 1/1;
-  height: auto;
+  aspect-ratio: 3/4;
+  height: 160px;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 25%;
+  margin: 0;
+  transform:scale(1.5);
+  transform-origin:center 25%;
+}
+.vice-photo{overflow:hidden;height:160px}
+@media(max-width:360px){.vice-photo{height:139px}}
+.vice-portrait figcaption {
+  display: block;
+  padding: 0;
+  color: #776144;
+}
+.vice-portrait figcaption > span,
+.vice-portrait figcaption > b {
+  display: block;
+}
+.vice-portrait figcaption .vice-brand {
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.vice-portrait figcaption .vice-role {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  margin-bottom: 6px;
+}
+.vice-portrait figcaption .vice-name {
+  font-family: var(--serif);
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.vice-portrait figcaption .vice-name-en {
+  font-family: Georgia, serif;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  margin-top: 7px;
+  color: #9b8260;
+}
+.vice-bio {
+  padding: 0 0 22px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #d2c0a5;
+}
+.v2-closing .vice-bio p {
+  font-size: 11px;
+  line-height: 1.95;
+  color: #756752;
   margin: 0;
 }
-.vice-portrait figcaption {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 18px;
-  color: #776144;
-  gap: 16px;
+.vice-bio a {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #806541;
+}
+.v2-closing .v2-signature span {
+  display: block;
+  font-family: var(--sans);
+  font-size: 10px;
+  color: #867151;
+}
+.v2-closing .v2-signature b {
+  display: block;
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  margin-top: 7px;
+}
+@media (max-width: 360px) {
+  .v2-closing .vice-portrait {
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 18px;
+  }
+  .v2-closing .vice-portrait img {
+    height: 139px;
+  }
+  .vice-portrait figcaption .vice-name {
+    font-size: 23px;
+  }
 }
 .vice-portrait figcaption span {
   font-family: var(--serif);
