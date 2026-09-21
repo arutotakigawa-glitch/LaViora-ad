@@ -1,4 +1,4 @@
-name: Deploy LaViora_Meta広告v1 to GitHub Pages
+name: Deploy LaViora V1 and V2 to GitHub Pages
 
 on:
   push:
@@ -25,10 +25,15 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Prepare both versions (keep V1 at the original URL)
+        run: |
+          mkdir -p _site/v2
+          cp -a LaViora_Meta広告v1/. _site/
+          cp -a LaViora_Meta広告v2/. _site/v2/
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: LaViora_Meta広告v1
+          path: _site
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
