@@ -1,3 +1,27 @@
+.skin-improvement {
+  margin: 24px 0;
+  padding: 22px 18px;
+  background: #e9ddc9;
+  border-top: 2px solid #a08961;
+}
+.skin-improvement h3 {
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 12px 0;
+}
+.skin-improvement p:not(.eyebrow) {
+  font-size: 13px;
+  line-height: 1.95;
+  margin-top: 14px;
+}
+.skin-improvement small {
+  display: block;
+  font-size: 10px;
+  line-height: 1.85;
+  color: #786c5d;
+  margin-top: 16px;
+}
 .v2 .hero-editorial {
   padding: 22px 0 0;
   background: linear-gradient(135deg, #eee2d1, #f7f0e6 70%);
