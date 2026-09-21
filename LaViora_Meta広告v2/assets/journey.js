@@ -4,7 +4,7 @@
     const detail = {
       event,
       page_id: "laviora_story",
-      page_version: "20260921-first-esthetic-v2",
+      page_version: "20260921-advisor-review-v2",
       experiment_id: "none",
       variant: "skin-story-v2",
       ...params,
@@ -52,7 +52,7 @@
     },
     { threshold: 0.25 },
   );
-  const first = document.querySelector('.hero-comparison') || document.querySelector('[data-case="1"]');
+  const first = document.querySelector("#case-gallery .case");
   if (first) observer.observe(first);
   const sticky = document.getElementById("sticky-cta");
   const stickyObserver = new IntersectionObserver(

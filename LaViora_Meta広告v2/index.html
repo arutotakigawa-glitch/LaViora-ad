@@ -5,11 +5,6 @@
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <link as="image" href="images/logo.svg" rel="preload" />
     <link
-      as="image"
-      href="images/optimized-v35/line-coupon-editorial-v33.webp"
-      rel="preload"
-    />
-    <link
       as="style"
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Noto+Serif+JP:wght@400;500;600&amp;display=swap"
       rel="preload"
@@ -61,8 +56,9 @@
     <link rel="stylesheet" href="assets/site-v2.css?v=2" />
     <link rel="stylesheet" href="assets/editorial-v2.css?v=2" />
     <link rel="stylesheet" href="assets/first-view-v2.css?v=4" />
+    <link rel="stylesheet" href="assets/audit-v2.css?v=1" />
   </head>
-  <body class="v2">
+  <body class="v2 audit-v2">
     <a class="skip" href="#main">本文へ移動</a>
     <header class="header">
       <a aria-label="ページの先頭へ" href="#top"
@@ -74,239 +70,215 @@
       /></a>
     </header>
     <main id="main">
-      <section class="v2-hero hero-editorial" id="top">
+      <section class="v2-hero hero-editorial audit-hero" id="top">
         <div class="wrap">
           <p class="hero-kicker">ニキビ・ニキビ跡に悩む肌へ</p>
           <h1>「また肌荒れ…」で、<br />一日を始めたくない。</h1>
           <p class="hero-treatment">
             自分に合う、<b>ハーブピーリング</b>という選択。
           </p>
-          <figure class="hero-comparison">
-            <div class="case-media side">
-              <img
-                alt="施術前（左）と施術後（右）の肌状態の一例"
-                decoding="async"
-                height="1051"
-                fetchpriority="high"
-                src="images/case-v5-06.jpg"
-                width="1496"
-              /><span
-                class="case-photo-label"
-                style="left: 0%; top: 0%; width: 32.2%; height: 12.1%"
-                >施術前</span
-              ><span
-                class="case-photo-label is-after"
-                style="left: 48.4%; top: 0%; width: 30.9%; height: 12.1%"
-                >施術後</span
-              >
+          <div id="results">
+            <h2 class="visually-hidden">La Vioraのお客様の施術例</h2>
+            <div
+              class="swipe-gallery case-gallery"
+              id="case-gallery"
+              tabindex="0"
+              role="region"
+              aria-label="施術例7件のスライド"
+            >
+              <figure class="case gallery-slide" data-case="7">
+                <div class="case-kicker">
+                  <span>SKIN JOURNAL</span><b>シミ・色素沈着</b>
+                </div>
+                <div class="case-media side">
+                  <img
+                    alt="施術前（左）と施術後（右）の肌状態の一例"
+                    decoding="async"
+                    height="1051"
+                    fetchpriority="high"
+                    src="images/case-v5-06.jpg"
+                    width="1496"
+                  /><span
+                    class="case-photo-label"
+                    style="left: 0%; top: 0%; width: 32.2%; height: 12.1%"
+                    >施術前</span
+                  ><span
+                    class="case-photo-label is-after"
+                    style="left: 48.4%; top: 0%; width: 30.9%; height: 12.1%"
+                    >施術後</span
+                  >
+                </div>
+              </figure>
+              <figure class="case gallery-slide" data-case="3">
+                <div class="case-kicker">
+                  <span>SKIN JOURNAL</span><b>ニキビ・ニキビ跡</b>
+                </div>
+                <div class="case-media stacked">
+                  <img
+                    alt="施術前（上）と施術後（下）の肌状態の一例"
+                    decoding="async"
+                    height="1086"
+                    loading="lazy"
+                    src="images/case-v5-02.jpg"
+                    width="1448"
+                  /><span
+                    class="case-photo-label"
+                    style="left: 0%; top: 35.8%; width: 33.4%; height: 11.9%"
+                    >施術前</span
+                  ><span
+                    class="case-photo-label is-after"
+                    style="left: 0%; top: 85.4%; width: 33.8%; height: 14.6%"
+                    >施術後</span
+                  >
+                </div>
+              </figure>
+              <figure class="case gallery-slide" data-case="4">
+                <div class="case-kicker">
+                  <span>SKIN JOURNAL</span><b>ニキビ・ニキビ跡</b>
+                </div>
+                <div class="case-media stacked">
+                  <img
+                    alt="施術前（上）と施術後（下）の肌状態の一例"
+                    decoding="async"
+                    height="1051"
+                    loading="lazy"
+                    src="images/case-v5-03.jpg"
+                    width="1497"
+                  /><span
+                    class="case-photo-label"
+                    style="left: 0%; top: 35.1%; width: 33.7%; height: 12.7%"
+                    >施術前</span
+                  ><span
+                    class="case-photo-label is-after"
+                    style="left: 0%; top: 86.6%; width: 32.9%; height: 13.4%"
+                    >施術後</span
+                  >
+                </div>
+              </figure>
+              <figure class="case gallery-slide" data-case="5">
+                <div class="case-kicker">
+                  <span>SKIN JOURNAL</span><b>ニキビ跡・色素沈着</b>
+                </div>
+                <div class="case-media stacked">
+                  <img
+                    alt="施術前（上）と施術後（下）の肌状態の一例"
+                    decoding="async"
+                    height="1050"
+                    loading="lazy"
+                    src="images/case-v5-04.jpg"
+                    width="1498"
+                  /><span
+                    class="case-photo-label"
+                    style="left: 0%; top: 34.9%; width: 35.1%; height: 13.2%"
+                    >施術前</span
+                  ><span
+                    class="case-photo-label is-after"
+                    style="left: 0%; top: 87%; width: 35.1%; height: 13%"
+                    >施術後</span
+                  >
+                </div>
+              </figure>
+              <figure class="case gallery-slide" data-case="2">
+                <div class="case-kicker">
+                  <span>SKIN JOURNAL</span><b>毛穴</b>
+                </div>
+                <div class="case-media stacked">
+                  <img
+                    alt="施術前（上）と施術後（下）の肌状態の一例"
+                    decoding="async"
+                    height="1118"
+                    loading="lazy"
+                    src="images/case-v41-pores.jpg"
+                    width="1600"
+                  /><span
+                    class="case-photo-label"
+                    style="left: 0%; top: 0%; width: 32%; height: 12%"
+                    >施術前</span
+                  ><span
+                    class="case-photo-label is-after"
+                    style="left: 0%; top: 50.55%; width: 32.3%; height: 12.1%"
+                    >施術後</span
+                  >
+                </div>
+              </figure>
+              <figure class="case gallery-slide" data-case="6">
+                <div class="case-kicker">
+                  <span>SKIN JOURNAL</span><b>シミ・炎症</b>
+                </div>
+                <div class="case-media side">
+                  <img
+                    alt="施術前（左）と施術後（右）の肌状態の一例"
+                    decoding="async"
+                    height="1120"
+                    loading="lazy"
+                    src="images/case-v5-05.jpg"
+                    width="1600"
+                  /><span
+                    class="case-photo-label"
+                    style="left: 0%; top: 0%; width: 31.1%; height: 11.2%"
+                    >施術前</span
+                  ><span
+                    class="case-photo-label is-after"
+                    style="left: 50.1%; top: 0%; width: 31.5%; height: 11.2%"
+                    >施術後</span
+                  >
+                </div>
+              </figure>
+              <figure class="case gallery-slide" data-case="1">
+                <div class="case-kicker">
+                  <span>SKIN JOURNAL</span><b>赤み・ニキビ跡</b>
+                </div>
+                <div class="case-media side">
+                  <img
+                    alt="施術前（左）と施術後（右）の肌状態の一例"
+                    decoding="async"
+                    height="1120"
+                    loading="lazy"
+                    src="images/case-v5-01.jpg"
+                    width="1600"
+                  /><span
+                    class="case-photo-label"
+                    style="left: 0%; top: 0%; width: 32.5%; height: 12.1%"
+                    >施術前</span
+                  ><span
+                    class="case-photo-label is-after"
+                    style="left: 51.6%; top: 0%; width: 32.9%; height: 12.1%"
+                    >施術後</span
+                  >
+                </div>
+              </figure>
             </div>
-            <figcaption>La Vioraのお客様の施術例</figcaption>
-          </figure>
-          <a class="v2-scroll" href="#results" id="hero-cta"
-            ><span>ほかの肌の変化も見てみる</span
+            <div class="gallery-controls">
+              <p>横にスライドして見る</p>
+              <div>
+                <button
+                  type="button"
+                  data-gallery-prev="case-gallery"
+                  aria-label="前のスライドへ"
+                >
+                  ←</button
+                ><span data-gallery-count="case-gallery" aria-live="polite"
+                  >1 / 7</span
+                ><button
+                  type="button"
+                  data-gallery-next="case-gallery"
+                  aria-label="次のスライドへ"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+          </div>
+          <a class="v2-scroll" href="#empathy" id="hero-cta"
+            ><span>繰り返す肌荒れ。次のケアを考える。</span
             ><span aria-hidden="true">↓</span></a
           >
-        </div>
-      </section>
-      <section class="section v2-proof" id="results">
-        <div class="wrap">
-          <p class="eyebrow">REAL SKIN / 実際の施術例</p>
-          <h2>この肌の変化を、<br />見てください。</h2>
-          <div
-            class="swipe-gallery case-gallery"
-            id="case-gallery"
-            tabindex="0"
-            role="region"
-            aria-label="施術例7件のスライド"
-          >
-            <figure class="case gallery-slide" data-case="7">
-              <div class="case-kicker">
-                <span>SKIN JOURNAL</span><b>シミ・色素沈着</b>
-              </div>
-              <div class="case-media side">
-                <img
-                  alt="施術前（左）と施術後（右）の肌状態の一例"
-                  decoding="async"
-                  height="1051"
-                  loading="lazy"
-                  src="images/case-v5-06.jpg"
-                  width="1496"
-                /><span
-                  class="case-photo-label"
-                  style="left: 0%; top: 0%; width: 32.2%; height: 12.1%"
-                  >施術前</span
-                ><span
-                  class="case-photo-label is-after"
-                  style="left: 48.4%; top: 0%; width: 30.9%; height: 12.1%"
-                  >施術後</span
-                >
-              </div>
-            </figure>
-            <figure class="case gallery-slide" data-case="3">
-              <div class="case-kicker">
-                <span>SKIN JOURNAL</span><b>ニキビ・ニキビ跡</b>
-              </div>
-              <div class="case-media stacked">
-                <img
-                  alt="施術前（上）と施術後（下）の肌状態の一例"
-                  decoding="async"
-                  height="1086"
-                  loading="lazy"
-                  src="images/case-v5-02.jpg"
-                  width="1448"
-                /><span
-                  class="case-photo-label"
-                  style="left: 0%; top: 35.8%; width: 33.4%; height: 11.9%"
-                  >施術前</span
-                ><span
-                  class="case-photo-label is-after"
-                  style="left: 0%; top: 85.4%; width: 33.8%; height: 14.6%"
-                  >施術後</span
-                >
-              </div>
-            </figure>
-            <figure class="case gallery-slide" data-case="4">
-              <div class="case-kicker">
-                <span>SKIN JOURNAL</span><b>ニキビ・ニキビ跡</b>
-              </div>
-              <div class="case-media stacked">
-                <img
-                  alt="施術前（上）と施術後（下）の肌状態の一例"
-                  decoding="async"
-                  height="1051"
-                  loading="lazy"
-                  src="images/case-v5-03.jpg"
-                  width="1497"
-                /><span
-                  class="case-photo-label"
-                  style="left: 0%; top: 35.1%; width: 33.7%; height: 12.7%"
-                  >施術前</span
-                ><span
-                  class="case-photo-label is-after"
-                  style="left: 0%; top: 86.6%; width: 32.9%; height: 13.4%"
-                  >施術後</span
-                >
-              </div>
-            </figure>
-            <figure class="case gallery-slide" data-case="5">
-              <div class="case-kicker">
-                <span>SKIN JOURNAL</span><b>ニキビ跡・色素沈着</b>
-              </div>
-              <div class="case-media stacked">
-                <img
-                  alt="施術前（上）と施術後（下）の肌状態の一例"
-                  decoding="async"
-                  height="1050"
-                  loading="lazy"
-                  src="images/case-v5-04.jpg"
-                  width="1498"
-                /><span
-                  class="case-photo-label"
-                  style="left: 0%; top: 34.9%; width: 35.1%; height: 13.2%"
-                  >施術前</span
-                ><span
-                  class="case-photo-label is-after"
-                  style="left: 0%; top: 87%; width: 35.1%; height: 13%"
-                  >施術後</span
-                >
-              </div>
-            </figure>
-            <figure class="case gallery-slide" data-case="2">
-              <div class="case-kicker">
-                <span>SKIN JOURNAL</span><b>毛穴</b>
-              </div>
-              <div class="case-media stacked">
-                <img
-                  alt="施術前（上）と施術後（下）の肌状態の一例"
-                  decoding="async"
-                  height="1118"
-                  loading="lazy"
-                  src="images/case-v41-pores.jpg"
-                  width="1600"
-                /><span
-                  class="case-photo-label"
-                  style="left: 0%; top: 0%; width: 32%; height: 12%"
-                  >施術前</span
-                ><span
-                  class="case-photo-label is-after"
-                  style="left: 0%; top: 50.55%; width: 32.3%; height: 12.1%"
-                  >施術後</span
-                >
-              </div>
-            </figure>
-            <figure class="case gallery-slide" data-case="6">
-              <div class="case-kicker">
-                <span>SKIN JOURNAL</span><b>シミ・炎症</b>
-              </div>
-              <div class="case-media side">
-                <img
-                  alt="施術前（左）と施術後（右）の肌状態の一例"
-                  decoding="async"
-                  height="1120"
-                  loading="lazy"
-                  src="images/case-v5-05.jpg"
-                  width="1600"
-                /><span
-                  class="case-photo-label"
-                  style="left: 0%; top: 0%; width: 31.1%; height: 11.2%"
-                  >施術前</span
-                ><span
-                  class="case-photo-label is-after"
-                  style="left: 50.1%; top: 0%; width: 31.5%; height: 11.2%"
-                  >施術後</span
-                >
-              </div>
-            </figure>
-            <figure class="case gallery-slide" data-case="1">
-              <div class="case-kicker">
-                <span>SKIN JOURNAL</span><b>赤み・ニキビ跡</b>
-              </div>
-              <div class="case-media side">
-                <img
-                  alt="施術前（左）と施術後（右）の肌状態の一例"
-                  decoding="async"
-                  height="1120"
-                  loading="lazy"
-                  src="images/case-v5-01.jpg"
-                  width="1600"
-                /><span
-                  class="case-photo-label"
-                  style="left: 0%; top: 0%; width: 32.5%; height: 12.1%"
-                  >施術前</span
-                ><span
-                  class="case-photo-label is-after"
-                  style="left: 51.6%; top: 0%; width: 32.9%; height: 12.1%"
-                  >施術後</span
-                >
-              </div>
-            </figure>
-          </div>
-          <div class="gallery-controls">
-            <p>横にスライドして見る</p>
-            <div>
-              <button
-                type="button"
-                data-gallery-prev="case-gallery"
-                aria-label="前のスライドへ"
-              >
-                ←</button
-              ><span data-gallery-count="case-gallery" aria-live="polite"
-                >1 / 7</span
-              ><button
-                type="button"
-                data-gallery-next="case-gallery"
-                aria-label="次のスライドへ"
-              >
-                →
-              </button>
-            </div>
-          </div>
-          <p class="note">
-            「施術後」は継続施術後の来店時の写真を含み、施術直後とは限りません。施術期間・回数は症例により異なります。一例であり、同様の結果を保証するものではありません。肌の状態・変化には個人差があります。
-          </p>
-          <p class="v2-bridge">
-            でも、その前に。<br /><b>あなたにも、こんな経験はありませんか？</b>
-          </p>
+          <details class="audit-case-note">
+            <summary>施術例について</summary>
+            <p>
+              「施術後」は継続施術後の来店時の写真を含み、施術直後とは限りません。施術期間・回数は症例により異なり、変化には個人差があります。
+            </p>
+          </details>
         </div>
       </section>
       <section class="section v2-empathy" id="empathy">
@@ -323,7 +295,7 @@
             </li>
           </ul>
           <p>
-            何もしていないわけじゃない。<br />それでも迷うなら、次に買い足す前に。
+            何もしていないわけじゃない。<br />それでも迷うなら、次に<span class="keep-short">買い足す前に。</span>
           </p>
           <p class="v2-emphasis">
             <mark class="copy-highlight"
@@ -339,11 +311,7 @@
             気になるところだけでなく、<br />肌全体を見直す「肌質改善」へ。
           </h2>
           <p class="compact-skin-intro">
-            肌が荒れるたび、気になるところだけをケアする。<br />それでも繰り返すなら、肌全体の状態や、毎日のケアにも目を向けてみませんか。
-          </p>
-          <p class="compact-skin-intro">
-            乾燥していないか。刺激を重ねていないか。皮脂や毛穴の状態はどうか。<b>今見えている悩みだけで、ケアを決めないこと。</b>それが、La
-            Vioraが考える肌質改善の出発点です。
+            肌が荒れるたび、気になるところだけをケアする。<br />それでも繰り返すなら、乾燥・刺激・皮脂の状態と、毎日の習慣まで見直してみませんか。
           </p>
           <div class="skin-panels">
             <figure>
@@ -646,21 +614,22 @@
               >図は肌の仕組みを説明するイメージです。</small
             >
           </p>
-          <div class="skin-improvement">
-            <p class="eyebrow">La Vioraが大切にしていること</p>
-            <h3>肌を知る。ケアを選ぶ。<br />日々の過ごし方まで見直す。</h3>
+          <div class="audit-cause-summary">
+            <p><b>乾燥・つっぱり</b><span>洗い方・保湿を見直す</span></p>
             <p>
-              肌質管理士が、肌の様子といつものケアを確認。肌に合う施術を検討し、帰宅後のスキンケアまで一緒に整理します。
+              <b>赤み・刺激の感じやすさ</b
+              ><span>負担になっているケアを整理する</span>
             </p>
             <p>
-              <mark class="copy-highlight"
-                >その場のケアだけで終わらず、<br />自分の肌に合うケアを続けていく。</mark
-              >
+              <b>皮脂・毛穴の詰まり</b
+              ><span>肌状態と、適切な相談先を確認する</span>
             </p>
-            <small
-              >ここでいう肌質改善は、肌の状態に合わせてケアを見直し、健やかな肌を目指すこと。生まれ持った肌質の変更や、皮膚疾患の治療を意味するものではありません。</small
-            >
           </div>
+          <p class="audit-bridge">
+            <mark class="copy-highlight"
+              >だから、肌を確かめてから、施術を選ぶ。</mark
+            ><br />La Vioraでは、ここに時間をかけています。
+          </p>
           <details class="skin-readmore" data-disclosure="skin_details">
             <summary>
               肌荒れにつながる習慣を、もう少し詳しく<span aria-hidden="true"
@@ -741,35 +710,6 @@
           </details>
         </div>
       </section>
-      <section class="section v2-approach" id="approach">
-        <div class="wrap">
-          <p class="eyebrow">CARE FOR YOU / 肌に合わせるケア</p>
-          <h2>「何を足すか」の前に、<br />「何が合うか」を一緒に。</h2>
-          <div class="v2-care-map">
-            <article>
-              <span>今の肌がわからない</span>
-              <h3>まず、肌状態といつものケアを整理</h3>
-              <p>
-                肌質管理士によるカウンセリングと肌診断システムで、乾燥・皮脂・刺激への感じやすさを確認します。
-              </p>
-            </article>
-            <article>
-              <span>刺激が不安・選び方に迷う</span>
-              <h3>施術するかどうかも含めて提案</h3>
-              <p>
-                4つのタイプから内容・強さを検討。肌状態によっては施術を見送り、医療機関への相談をおすすめすることもあります。
-              </p>
-            </article>
-            <article>
-              <span>帰ってから、また迷いそう</span>
-              <h3>家でのケアまで、相談を続けられる</h3>
-              <p>
-                保湿や洗顔、施術後の過ごし方まで。肌質管理士への365日相談で、次の来店までの不安にも寄り添います。
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
       <section class="section solution" id="solution">
         <div class="wrap wrap--wide">
           <header class="section-heading">
@@ -781,57 +721,9 @@
               <h2>自分に合うケアを、<br />ひとりで選ばなくていい。</h2>
             </div>
           </header>
-          <p class="eyebrow">WHAT'S DIFFERENT / 他のサロンと、何が違うのか。</p>
-          <ul class="target-list target-list--features" id="differences">
-            <li>
-              <span>あなた専用</span>
-              <p>
-                <b>あなたの肌に合わせて、施術をカスタマイズ。</b
-                ><br
-                  style="display: initial"
-                />肌診断の結果から、4つの施術タイプと刺激の強さを、一人ひとりの肌に合わせて組み立てます。
-              </p>
-            </li>
-            <li>
-              <span>納得して選べる</span>
-              <p>
-                <b>「今日はやめておきましょう」も、提案のひとつ。</b
-                ><br
-                  style="display: initial"
-                />都度払いだから、続けるかどうかを毎回あなたが決められます。
-              </p>
-            </li>
-            <li>
-              <span>365日相談</span>
-              <p>
-                <b>帰ってからも、何でも聞いてください。</b
-                ><br
-                  style="display: initial"
-                />施術後の肌の様子、自宅でのケア、ちょっとした不安まで。肌質管理士で構成された相談窓口が、LINEでお答えします。
-              </p>
-            </li>
-            <li>
-              <span>根拠が見える</span>
-              <p>
-                <b>使う商材は、創薬会社と共同開発した自社処方。</b
-                ><br
-                  style="display: initial"
-                />処方の考え方や研究データをご説明します。成分に関する研究と、個々のお客様の施術結果は異なります。
-              </p>
-            </li>
-          </ul>
-          <div class="skin-start">
-            <p class="eyebrow">RESEARCH &amp; PERSONAL CARE</p>
-            <h3>研究から生まれた施術を、<br />納得して選べるように。</h3>
-            <p>
-              創薬会社・大学病院との共同開発から生まれた、ダイヤモンドハーブピーリング®。独自の処方・施術設計を、一人ひとりの肌状態に合わせてご提案します。内容をご説明し、納得いただいてから施術へ進みます。
-            </p>
-            <p>
-              <mark class="copy-highlight"
-                >徹底的に肌を分析し、あなたに合う施術を選ぶところに、たっぷり時間をかけます。</mark
-              >
-            </p>
-          </div>
+          <p class="audit-section-lead">
+            肌状態を確認し、内容をご説明してから。<br />ダイヤモンドハーブピーリング®を、あなたの肌に合わせてご提案します。
+          </p>
           <div class="reason-grid">
             <article class="reason-card">
               <figure>
@@ -846,28 +738,27 @@
                 <figcaption>COUNSELING</figcaption>
               </figure>
               <div>
-                <p class="reason-number">COUNSELING</p>
-                <h3>いつものケアと生活習慣を、<br />肌診断システムで分析。</h3>
+                <p class="reason-number">肌を知る / COUNSELING</p>
+                <span class="audit-benefit">あなた専用</span>
+                <h3>「合わなかったケア」も、<br />肌を知る手がかりに。</h3>
                 <p>
                   累計5万件以上の施術実績をもとにした、La
                   Vioraの肌診断システムで、生活習慣・肌状態・肌特性を分析。肌質管理士が普段のケア、刺激への不安、大切な予定まで伺い、施術を選ぶ理由もお伝えします。
                 </p>
-                <ul class="concerns">
-                  <li>
-                    <span>NOW</span>
-                    <p><b>肌状態</b><br />乾燥・皮脂・刺激の感じやすさ</p>
-                  </li>
-                  <li>
-                    <span>PAST</span>
-                    <p><b>これまで</b><br />普段のケア・施術経験・生活習慣</p>
-                  </li>
-                  <li>
-                    <span>GOAL</span>
-                    <p>
-                      <b>これから</b><br />目指したい状態・大切な予定・通い方
-                    </p>
-                  </li>
-                </ul>
+                <dl class="audit-consultation">
+                  <div>
+                    <dt>今の肌</dt>
+                    <dd>乾燥・皮脂・刺激の感じやすさ</dd>
+                  </div>
+                  <div>
+                    <dt>これまで</dt>
+                    <dd>普段のケア・施術経験・生活習慣</dd>
+                  </div>
+                  <div>
+                    <dt>これから</dt>
+                    <dd>目指したい状態・大切な予定</dd>
+                  </div>
+                </dl>
               </div>
             </article>
             <article class="reason-card">
@@ -883,11 +774,11 @@
                 <figcaption>PERSONALIZED CARE</figcaption>
               </figure>
               <div id="care-types">
-                <p class="reason-number">PERSONALIZED CARE</p>
+                <p class="reason-number">肌に合わせる / PERSONALIZED CARE</p>
                 <div class="care-choice-intro">
                   <p class="care-choice-kicker">肌に合わせて選ぶ 4 TYPES</p>
                   <h3>
-                    同じハーブピーリングでも、<br />あなたの肌に合う中身は違います。
+                    同じ名前の施術でも、<br />中身は一人ひとりに。
                   </h3>
                   <p class="care-choice-lead">
                     商材・刺激の強さ・通い方まで、肌状態に合わせて設計。<mark
@@ -920,11 +811,48 @@
               </div>
             </article>
           </div>
-          <div class="skin-start experienced-care">
-            <p>
-              以前の施術で変化を感じなかった方も、まずは肌診断から。様々な角度から肌を分析し、今の肌に合うかを確かめます。
-            </p>
-          </div>
+          <ul
+            class="target-list target-list--features audit-promises"
+            id="differences"
+          >
+            <li>
+              <span>納得して選べる</span>
+              <p>
+                <b>「今日はやめておきましょう」も、提案のひとつ。</b
+                ><br />肌状態によっては施術を見送り、皮膚科への相談をおすすめする場合もあります。
+              </p>
+            </li>
+            <li>
+              <span>365日相談</span>
+              <p>
+                <b
+                  >帰宅後も、肌質管理士に<mark class="copy-highlight"
+                    >365日</mark
+                  >相談できます。</b
+                ><br />洗顔・保湿・施術後の過ごし方まで、LINEで聞ける窓口があります。
+              </p>
+            </li>
+            <li>
+              <span>根拠が見える</span>
+              <p>
+                <b>使うものの情報も、施術前に確認できます。</b
+                ><br />創薬会社と共同開発した自社処方。製造・品質試験については、<a
+                  href="#quality"
+                  >品質への取り組み</a
+                >をご覧ください。
+              </p>
+            </li>
+          </ul>
+          <a class="audit-price-jump" href="#first-offer"
+            ><span
+              >初回・顔全体1箇所<br /><small
+                >LINE友だち追加限定／税込</small
+              ></span
+            ><strong>5,800<small>円</small></strong
+            ><span class="jump-label"
+              >料金・体験内容へ <span aria-hidden="true">↓</span></span
+            ></a
+          >
         </div>
       </section>
       <section class="section v2-voices" id="voices">
@@ -1112,7 +1040,7 @@
                 <p class="review-count">口コミ 2,300件</p>
               </div>
             </dl>
-            <p class="note">2026年9月現在は28店舗・オープン準備中を含む</p>
+
             <div class="review-award" id="award">
               <p class="award-kicker">HOT PEPPER Beauty AWARD</p>
               <div class="review-award-logo">
@@ -1158,46 +1086,6 @@
             </div>
             <p class="review-salons">ハーブピーリング専門店・全国28店舗</p>
             <p class="note">※2026年9月現在。オープン準備中の店舗を含みます。</p>
-          </div>
-          <div class="first-visit-cta">
-            <a
-              aria-label="La Viora公式LINEで施術例と料金を確認する"
-              class="cta"
-              data-cta="first_visit"
-              href="https://liff.line.me/2009185552-ObuWGDkG/landing?follow=%40125apoat&amp;lp=EpE2rD&amp;liff_id=2009185552-ObuWGDkG"
-              ><svg
-                aria-hidden="true"
-                class="lucide lucide-message-circle"
-                fill="none"
-                height="19"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewbox="0 0 24 24"
-                width="19"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"
-                ></path></svg
-              ><span>LINEで施術例・料金を見てみる</span
-              ><svg
-                aria-hidden="true"
-                class="lucide lucide-arrow-right"
-                fill="none"
-                height="17"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewbox="0 0 24 24"
-                width="17"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path></svg
-            ></a>
           </div>
         </div>
       </section>
@@ -1313,12 +1201,6 @@
                   <span>肌質管理士コース<br />通過率</span
                   ><b>3<span>％</span></b>
                 </p>
-                <p class="academy-message">
-                  厳しい基準を越えた学びを、<br />あなたの肌のために。
-                </p>
-                <p>
-                  厳しい基準の肌質管理士コースを卒業した肌質管理士が、あなたの肌に向き合います。
-                </p>
               </div>
               <p>
                 施術前だけでなく、施術中に感じた刺激や不安もお伝えください。担当スタッフは店舗により異なります。
@@ -1419,7 +1301,7 @@
             </div>
             <div>
               <p class="eyebrow">THE TREATMENT JOURNEY / 施術の流れ</p>
-              <h2>肌と向き合う、<br />約120分。</h2>
+              <h2>初めての日は、<br />こんなふうに進みます。</h2>
             </div>
           </header>
           <div class="process-meta">
@@ -1443,11 +1325,7 @@
                 <h3>来店・カウンセリング</h3>
                 <span>約10分</span>
                 <p>
-                  悩みだけでなく、これまでのケア、刺激への不安、大切な予定まで。今の肌に合う進め方を一緒に整理します。
-                </p>
-                <p class="process-value">
-                  <small>EXPERIENCE VALUE</small
-                  ><b>不安や予定を、施術前に共有できる</b>
+                  今までのケアや不安、大切な予定まで。肌質管理士が伺います。
                 </p>
               </div>
             </li>
@@ -1480,11 +1358,7 @@
                 <h3>診断システムによる肌診断</h3>
                 <span>カウンセリング内で実施</span>
                 <p>
-                  肌診断システムで生活習慣・肌状態・肌特性を様々な角度から分析し、一人ひとりにおすすめのピーリングをご提案します。
-                </p>
-                <p class="process-value">
-                  <small>EXPERIENCE VALUE</small
-                  ><b>自分に合うピーリングを、理由と一緒に知る</b>
+                  肌状態と生活習慣などを分析し、施術を選ぶ理由をご説明します。
                 </p>
               </div>
             </li>
@@ -1503,9 +1377,7 @@
                 <p class="process-index">STEP 3</p>
                 <h3>クレンジング・洗顔</h3>
                 <span>約15分</span>
-                <p>
-                  余分な皮脂や汚れを丁寧に落とし、肌の状態を見やすくしながら施術の準備を整えます。
-                </p>
+                <p>メイクや汚れを落とし、施術の準備を整えます。</p>
               </div>
             </li>
             <li>
@@ -1524,11 +1396,7 @@
                 <h3>ダイヤモンドハーブピーリング</h3>
                 <span>約30分</span>
                 <p>
-                  決められた一つの強さではなく、その日の肌状態と目的に合わせ、刺激の感じ方にも配慮して進めます。
-                </p>
-                <p class="process-value">
-                  <small>EXPERIENCE VALUE</small
-                  ><b>「強い」より、「合う」を選べる</b>
+                  4つのタイプから選んだ内容で、肌状態と刺激の感じ方を確認しながら施術します。
                 </p>
               </div>
             </li>
@@ -1565,7 +1433,7 @@
                 <p class="process-index">STEP 6</p>
                 <h3>ダイヤモンドリペアクリーム</h3>
                 <span>約5分</span>
-                <p>ダイヤモンドリペアクリームによる保湿・ツヤ。</p>
+                <p>ダイヤモンドリペアクリームで保湿し、仕上げます。</p>
               </div>
             </li>
             <li>
@@ -1584,11 +1452,7 @@
                 <h3>アフターカウンセリング</h3>
                 <span>約5分</span>
                 <p>
-                  施術前後の肌状態を写真で一緒に確認し、当日の過ごし方や避けたいこと、自宅でのケアを分かりやすくお伝えします。
-                </p>
-                <p class="process-value">
-                  <small>EXPERIENCE VALUE</small
-                  ><b>帰ってからも、迷わず過ごせる</b>
+                  写真で肌状態を確認し、自宅でのケアと当日の過ごし方をご案内します。
                 </p>
               </div>
             </li>
@@ -1635,103 +1499,26 @@
                 <dd>フェイシャル1箇所<small>部位追加可</small></dd>
               </div>
             </dl>
+            <div class="audit-price-terms">
+              <p><b>2回目以降</b><span>1箇所 11,800円（税込）</span></p>
+              <p>
+                <b>部位を追加する場合</b
+                ><span>1箇所につき ＋5,000円（税込）</span>
+              </p>
+              <details>
+                <summary>追加できる部位を見る</summary>
+                <p>
+                  フェイス、首・デコルテ、二の腕、背中上部、背中下部から選べます。
+                </p>
+              </details>
+            </div>
             <p class="price-offer-note" id="offer-note">
               ※赤み・違和感・角片等が生じる場合があります。感じ方や変化には個人差があります。
             </p>
           </article>
         </div>
       </section>
-      <section class="section decision" id="price">
-        <div class="wrap wrap--wide">
-          <div class="price-overview">
-            <div class="decision-copy">
-              <p class="eyebrow">PRICE &amp; PARTS / 施術箇所</p>
-              <h2>
-                まずは、<br />フェイシャル（顔全体）<span class="keep-short"
-                  >1箇所から。</span
-                >
-              </h2>
-              <div>
-                <p class="note">
-                  初回 5,800円（税込）　LINE友だち追加限定（通常7,800円）
-                </p>
-                <p class="note">
-                  2回目以降は、1回ごとに11,800円（税込）。コース契約・回数券はありません。
-                </p>
-                <p class="note">所要時間 約120分（カウンセリング含む）</p>
-              </div>
-              <p>
-                気になる部位は、1箇所につき＋5,000円（税込）で追加できます。フェイス、首・デコルテ、二の腕、背中上部、背中下部からお選びいただけます。
-              </p>
-              <ul>
-                <li>
-                  <svg
-                    aria-hidden="true"
-                    class="lucide lucide-check"
-                    fill="none"
-                    height="17"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewbox="0 0 24 24"
-                    width="17"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M20 6 9 17l-5-5"></path></svg
-                  >まずは1箇所から体験
-                </li>
-                <li>
-                  <svg
-                    aria-hidden="true"
-                    class="lucide lucide-check"
-                    fill="none"
-                    height="17"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewbox="0 0 24 24"
-                    width="17"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M20 6 9 17l-5-5"></path></svg
-                  >1箇所追加 ＋5,000円（税込）
-                </li>
-                <li>
-                  <svg
-                    aria-hidden="true"
-                    class="lucide lucide-check"
-                    fill="none"
-                    height="17"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewbox="0 0 24 24"
-                    width="17"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M20 6 9 17l-5-5"></path></svg
-                  >必要な方のみ部位追加が可能
-                </li>
-              </ul>
-            </div>
-            <figure class="parts-figure">
-              <img
-                alt="フェイシャル、デコルテ、二の腕、背中上部、背中下部の施術箇所を示した図"
-                decoding="async"
-                height="602"
-                loading="lazy"
-                src="images/treatment-parts.webp"
-                width="947"
-              />
-              <figcaption>
-                1〜5の各範囲を、それぞれ1箇所として選択できます。
-              </figcaption>
-            </figure>
-          </div>
-        </div>
+      <section class="section decision audit-reassurance" id="price">
         <div class="price-visit-guide">
           <div class="wrap wrap--wide">
             <header class="first-visit-heading">
@@ -1839,7 +1626,7 @@
           </div>
           <div>
             <p class="eyebrow">HOW TO START / LINEでの確認方法</p>
-            <h2>まずはLINEで、クーポンを受け取る。</h2>
+            <h2>クーポンを受け取って、<br />空き枠を確認。</h2>
           </div>
         </header>
         <ol>
@@ -1857,7 +1644,7 @@
             <div>
               <b>施術例・料金・空き枠を確認する</b>
               <p>
-                見るだけでも大丈夫です。気になることは肌質管理士に聞けます。
+                希望する店舗の空き枠や施術内容を確認。気になることは肌質管理士に聞けます。
               </p>
             </div>
           </li>
@@ -1947,12 +1734,11 @@
             </summary>
             <div class="disclosure-body">
               <p class="faq-original">
-                ほとんどありません。
-                施術中に軽いピリつきを感じる方もいらっしゃいますが、一時的な反応であり、通常はすぐにおさまります。剥離しない処方のため、大切な予定の前日でも安心して受けていただけます。
+                施術中にピリつきを感じたり、施術後に赤み・違和感・角片等が生じる場合があります。感じ方には個人差があるため、大切な予定がある方は事前にお知らせください。
               </p>
             </div>
           </details>
-          <details class="disclosure" data-disclosure="faq_3" open="">
+          <details class="disclosure" data-disclosure="faq_3">
             <summary>
               <b aria-hidden="true">Q</b
               ><span class="faq-question"
@@ -1962,7 +1748,7 @@
             <div class="disclosure-body">
               <p class="faq-original">
                 肌のターンオーバー周期に合わせ、改善期は2〜4週間に1回のペースでの施術がおすすめです。
-                数回施術を受けていただいた後は、2〜4ヶ月に1度のメンテナンスで状態を定着させることが可能です。
+                その後は肌状態に合わせて、2〜4ヶ月に1度のメンテナンスなどをご提案します。頻度や回数は一人ひとり異なります。
               </p>
             </div>
           </details>
@@ -2010,14 +1796,14 @@
           <h2>「何もわからない」ままで、<br />いらしてください。</h2>
           <figure class="vice-portrait">
             <div class="vice-photo">
-            <img
-              src="images/vice-president-portrait.jpg"
-              width="2240"
-              height="3360"
-              loading="lazy"
-              decoding="async"
-              alt="La Viora 副社長 山口明美の紹介写真"
-            />
+              <img
+                src="images/vice-president-portrait.jpg"
+                width="2240"
+                height="3360"
+                loading="lazy"
+                decoding="async"
+                alt="La Viora 副社長 山口明美の紹介写真"
+              />
             </div>
             <figcaption>
               <span class="vice-brand">La Viora Clinical</span>
@@ -2060,6 +1846,16 @@
           <p class="v2-signature">
             <span>La Viora Clinical 副社長</span><b>山口 明美</b>
           </p>
+          <div class="audit-closing-action">
+            <p>初めての相談は、LINEから。</p>
+            <a
+              class="cta"
+              data-cta="closing"
+              href="https://liff.line.me/2009185552-ObuWGDkG/landing?follow=%40125apoat&amp;lp=EpE2rD&amp;liff_id=2009185552-ObuWGDkG"
+              ><span>LINEでクーポン・空き枠を確認する</span
+              ><span aria-hidden="true">→</span></a
+            >
+          </div>
         </div>
       </section>
     </main>
@@ -2111,6 +1907,6 @@
           <path d="m12 5 7 7-7 7"></path></svg
       ></a>
     </div>
-    <script defer="defer" src="assets/journey.js?v=v2-3"></script>
+    <script defer="defer" src="assets/journey.js?v=audit-1"></script>
   </body>
 </html>
