@@ -10,25 +10,28 @@
   font-size: 12px;
 }
 .vice-career-roles {
-  margin: 18px 0 0;
+  margin: 10px 0 0;
 }
 .vice-career-roles > div {
-  border-top: 1px solid #dfd2bf;
-  padding: 12px 0;
+  padding: 2px 0;
+  font-size: 11px;
+  line-height: 1.55;
 }
 .vice-career-roles > div:last-child {
   padding-bottom: 0;
 }
 .vice-career-roles dt {
-  font-size: 12px;
-  line-height: 1.8;
+  display: inline;
+  font-size: inherit;
+  line-height: inherit;
 }
 .vice-career-roles dd {
-  margin: 3px 0 0;
+  display: inline;
+  margin: 0 0 0 0.5em;
   color: #806641;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.8;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: inherit;
 }
 .peeling-vision {
   margin: 28px 0;
