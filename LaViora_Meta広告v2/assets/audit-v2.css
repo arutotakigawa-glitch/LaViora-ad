@@ -1,4 +1,282 @@
 /* Consolidated reading rhythm for the advisor-led V2 review. */
+.peeling-vision {
+  margin: 28px 0;
+  padding: 24px 18px;
+  border: 1px solid #c9b591;
+  background: #f5f0e7;
+}
+.audit-v2 .peeling-vision h3,
+.audit-v2 .peeling-comparison h3 {
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 1.8;
+  margin: 12px 0 18px;
+}
+.audit-v2 .peeling-vision h3 {
+  font-size: clamp(18px, 5.2vw, 22px);
+}
+.audit-v2 .peeling-vision h3 br {
+  display: block;
+}
+.vision-message {
+  font-size: 14px;
+  line-height: 2;
+}
+.vision-pillars {
+  margin: 24px 0 0;
+}
+.vision-pillars > div {
+  border-top: 1px solid #d6c6ac;
+  padding: 18px 0;
+}
+.vision-pillars > div:last-child {
+  padding-bottom: 0;
+}
+.vision-pillars dt {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.8;
+}
+.vision-pillars dt span {
+  display: table;
+  border: 1px solid #ac9469;
+  padding: 1px 10px;
+  margin-bottom: 9px;
+  font-size: 12px;
+  color: #806641;
+}
+.vision-pillars dd {
+  margin: 9px 0 0;
+  font-size: 13px;
+  line-height: 1.95;
+}
+.audit-v2 .reason-card img.principle-icon {
+  display: block;
+  width: 62px;
+  height: 62px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  margin: 0 auto 16px;
+}
+.peeling-comparison {
+  margin: 32px 0 0;
+}
+.comparison-intro {
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+.peeling-comparison table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.75;
+}
+.peeling-comparison th,
+.peeling-comparison td {
+  border: 1px solid #d9c8ae;
+  padding: 13px 8px;
+  vertical-align: middle;
+  overflow-wrap: anywhere;
+}
+.peeling-comparison thead th {
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  background: #dfdbd3;
+}
+.peeling-comparison thead th:first-child {
+  width: 25%;
+  background: #f9f5ed;
+}
+.peeling-comparison thead th:nth-child(2) {
+  width: 39%;
+  background: #826b47;
+  color: #fffaf1;
+}
+.peeling-comparison tbody th {
+  background: #fffcf6;
+  font-weight: 500;
+  font-size: 11px;
+  text-align: left;
+}
+.peeling-comparison td:nth-child(2) {
+  background: #f0e5d1;
+  color: #514329;
+  font-weight: 600;
+}
+.peeling-comparison td:last-child {
+  background: #faf8f3;
+  color: #635e55;
+}
+.comparison-note {
+  margin-top: 12px;
+  color: #786954;
+  font-size: 10px;
+  line-height: 1.85;
+}
+.media-publications {
+  margin: 0 0 28px;
+}
+.media-publications img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.media-publications figcaption {
+  font-size: 10px;
+  color: #786954;
+  line-height: 1.8;
+  margin-top: 8px;
+}
+.audit-v2 #first-offer {
+  background: #eee6d8;
+}
+.audit-v2 .trial-offer {
+  background:
+    radial-gradient(ellipse at top left, #716a52, transparent 65%), #494638;
+  border: 1px solid #af9663;
+  color: #fffaf0;
+  padding: 28px 18px;
+  text-align: center;
+}
+.trial-kicker {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: #e2c77e;
+}
+.audit-v2 .trial-offer .trial-heading {
+  font-size: 23px;
+  line-height: 1.9;
+  margin: 14px 0;
+  color: #fffaf0;
+}
+.audit-v2 .trial-offer .trial-heading br {
+  display: block;
+}
+.audit-v2 .trial-offer .price-choice {
+  color: #ece2cd;
+  font-size: 11px;
+  margin: 0 0 22px;
+}
+.audit-v2 .trial-offer .price-ribbon {
+  position: relative;
+  display: block;
+  width: calc(100% - 18px);
+  margin: 0 auto;
+  padding: 15px 8px;
+  background: linear-gradient(105deg, #b39235, #f5e5ae 40%, #c9a538);
+  color: #4b3b20;
+  border: 0;
+}
+.trial-offer .price-ribbon::before,
+.trial-offer .price-ribbon::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 12px;
+  height: calc(100% - 2px);
+  background: #b79a4e;
+}
+.trial-offer .price-ribbon::before {
+  left: -12px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 35% 50%);
+}
+.trial-offer .price-ribbon::after {
+  right: -12px;
+  clip-path: polygon(0 0, 100% 0, 65% 50%, 100% 100%, 0 100%);
+}
+.audit-v2 .trial-offer .price-ribbon span {
+  display: block;
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.65;
+}
+.audit-v2 .trial-offer .price-ribbon b {
+  display: block;
+  margin: 4px 0 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+.trial-regular {
+  color: #e8d393;
+  font-size: 14px;
+}
+.trial-regular s {
+  font-family: Georgia, serif;
+  font-size: 23px;
+}
+.trial-limit {
+  margin: 10px 0 8px;
+  font-size: 11px;
+  color: #f0e4c2;
+}
+.trial-price {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0;
+  color: #eed27c;
+}
+.trial-price > span:first-child {
+  font-size: 12px;
+}
+.trial-price strong {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(47px, 13vw, 66px);
+  line-height: 1.2;
+}
+.trial-price > span:last-child {
+  font-size: 17px;
+}
+.trial-price small {
+  display: block;
+  font-size: 10px;
+}
+.trial-saving {
+  font-size: 12px;
+  margin: 10px 0 18px;
+  color: #f0db9c;
+}
+.audit-v2 .trial-offer .trial-cta {
+  width: 100%;
+  padding: 15px 8px;
+  font-size: 13px;
+  gap: 8px;
+}
+.audit-v2 .trial-offer .price-offer-meta {
+  background: #fffaf0;
+  color: #5d472c;
+  padding: 18px 10px;
+  margin-top: 22px;
+}
+.audit-v2 .trial-offer .price-offer-meta > div {
+  padding: 12px 0;
+}
+.audit-v2 .trial-offer .price-offer-meta > div:last-child {
+  border-bottom: 0;
+}
+.audit-v2 .trial-offer .price-offer-meta dt {
+  color: #79613e;
+}
+.audit-v2 .trial-offer .price-offer-meta dd {
+  font-size: 17px;
+}
+.audit-v2 .trial-offer .price-offer-meta small {
+  color: #79613e;
+  font-size: 11px;
+}
+.trial-offer .audit-price-terms {
+  border-color: #aa966d;
+}
+.audit-v2 .trial-offer .price-offer-note {
+  color: #e4dccb;
+  font-size: 10px;
+  line-height: 1.9;
+  text-align: left;
+}
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
