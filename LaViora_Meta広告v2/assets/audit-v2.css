@@ -6,37 +6,6 @@
   color: #806641;
   margin: 0 0 12px;
 }
-.vice-career-facts {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin: 0 0 18px;
-  padding: 16px 0;
-  border-block: 1px solid #cfbb98;
-  background: #f0e7d8;
-}
-.vice-career-facts > div {
-  text-align: center;
-  padding-inline: 6px;
-}
-.vice-career-facts > div + div {
-  border-left: 1px solid #cfbb98;
-}
-.vice-career-facts dt {
-  font-size: 11px;
-  color: #756044;
-}
-.vice-career-facts dd {
-  margin: 7px 0 0;
-  color: #6d5637;
-  font-size: 12px;
-}
-.vice-career-facts strong {
-  font-family: Georgia, serif;
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-right: 4px;
-}
 .v2-closing .vice-bio > p:not(.vice-career-heading) {
   font-size: 12px;
 }
