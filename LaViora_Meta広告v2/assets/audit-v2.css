@@ -682,9 +682,9 @@
   margin-bottom: 22px;
 }
 .audit-v2 .quality-photo img {
-  height: 145px;
+  height: auto;
   width: 100%;
-  object-fit: cover;
+  display: block;
 }
 .audit-v2 .quality-pillars {
   display: grid;
