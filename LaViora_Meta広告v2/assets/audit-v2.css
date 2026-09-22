@@ -443,6 +443,17 @@
 .skin-cause-takeaway .audit-bridge {
   margin: 0 0 12px;
 }
+.skin-cause-takeaway .salon-care-emphasis {
+  display: block;
+  margin-top: 4px;
+  font-size: clamp(18px, 5.4vw, 24px);
+  font-weight: 600;
+  line-height: 1.7;
+  color: #493d2c;
+}
+.salon-care-emphasis span {
+  display: inline-block;
+}
 .audit-bridge {
   font-family: var(--serif);
   font-size: 16px;
