@@ -685,6 +685,8 @@
   height: auto;
   width: 100%;
   display: block;
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 .audit-v2 .quality-pillars {
   display: grid;
