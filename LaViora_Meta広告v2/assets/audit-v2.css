@@ -52,11 +52,13 @@
 }
 .audit-v2 .reason-card img.principle-icon {
   display: block;
-  width: 62px;
-  height: 62px;
+  width: 40px;
+  height: 40px;
   aspect-ratio: 1;
   object-fit: contain;
-  margin: 0 auto 16px;
+  margin: 3px 0 0;
+  grid-column: 1;
+  grid-row: 1;
 }
 .peeling-comparison {
   margin: 32px 0 0;
@@ -470,14 +472,20 @@
   border-bottom: 1px solid #cdbb9f;
 }
 .method-principle {
-  padding: 22px 0;
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  column-gap: 12px;
+  padding: 20px 0;
   border-top: 1px solid #cdbb9f;
 }
+.method-principle > h4,
+.method-principle > p:not(.method-principle-label) {
+  grid-column: 1 / -1;
+}
 .method-principle .method-principle-label {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 4px 14px;
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
   font-family: var(--serif);
   font-size: 23px;
   font-weight: 500;
@@ -486,6 +494,7 @@
   margin: 0 0 12px;
 }
 .method-principle-label > span {
+  display: block;
   font-family: var(--sans);
   font-size: 10px;
   font-weight: 400;
