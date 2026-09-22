@@ -1,4 +1,66 @@
 /* Consolidated reading rhythm for the advisor-led V2 review. */
+.v2-closing .vice-bio > .vice-career-heading {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #806641;
+  margin: 0 0 12px;
+}
+.vice-career-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 18px;
+  padding: 16px 0;
+  border-block: 1px solid #cfbb98;
+  background: #f0e7d8;
+}
+.vice-career-facts > div {
+  text-align: center;
+  padding-inline: 6px;
+}
+.vice-career-facts > div + div {
+  border-left: 1px solid #cfbb98;
+}
+.vice-career-facts dt {
+  font-size: 11px;
+  color: #756044;
+}
+.vice-career-facts dd {
+  margin: 7px 0 0;
+  color: #6d5637;
+  font-size: 12px;
+}
+.vice-career-facts strong {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-right: 4px;
+}
+.v2-closing .vice-bio > p:not(.vice-career-heading) {
+  font-size: 12px;
+}
+.vice-career-roles {
+  margin: 18px 0 0;
+}
+.vice-career-roles > div {
+  border-top: 1px solid #dfd2bf;
+  padding: 12px 0;
+}
+.vice-career-roles > div:last-child {
+  padding-bottom: 0;
+}
+.vice-career-roles dt {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.vice-career-roles dd {
+  margin: 3px 0 0;
+  color: #806641;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.8;
+}
 .peeling-vision {
   margin: 28px 0;
   padding: 24px 18px;
