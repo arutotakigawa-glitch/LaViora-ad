@@ -734,6 +734,9 @@ body.audit-v2 {
   font-size: 1em;
   white-space: nowrap;
 }
+.audit-v2 .hero-catch > span:first-child {
+  font-size: clamp(17px, 5.15vw, 29px);
+}
 .audit-v2 .hero-catch br {
   display: block;
 }
@@ -754,6 +757,25 @@ body.audit-v2 {
 }
 .audit-v2 .trial-heading.catch-band::before {
   background: #e4d7bc;
+}
+.audit-v2 .peeling-vision h3.vision-catch {
+  font-size: clamp(16px, 4.9vw, 25px);
+  letter-spacing: -.035em;
+}
+.audit-v2 .vision-catch > span,
+.audit-v2 .method-philosophy h3.philosophy-catch {
+  white-space: nowrap;
+}
+.audit-v2 .method-philosophy h3.philosophy-catch {
+  font-size: clamp(14px, 4.25vw, 22px);
+  letter-spacing: -.035em;
+}
+.audit-v2 .reason-card h3.counseling-catch {
+  font-size: clamp(16px, 4.9vw, 25px);
+  letter-spacing: -.035em;
+}
+.audit-v2 .counseling-catch br {
+  display: block;
 }
 @media (max-width: 360px) {
   body.audit-v2 { --catch-bleed: 20px; }
