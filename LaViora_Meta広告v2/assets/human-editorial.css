@@ -699,3 +699,65 @@ body.audit-v2 {
   .audit-v2 .vice-message { padding-left: 24px; }
   .audit-v2 .peeling-comparison table { font-size: 13px; }
 }
+
+/* Advisor review: clear headline bands, keeping the editorial reading width. */
+body.audit-v2 {
+  --catch-bleed: 26px;
+}
+.audit-v2 .catch-band {
+  position: relative;
+  isolation: isolate;
+  padding-block: 14px;
+  font-weight: 600;
+}
+.audit-v2 .catch-band::before {
+  content: "";
+  position: absolute;
+  inset: 0 calc(-1 * var(--catch-bleed));
+  z-index: -1;
+  background: #e5dccf;
+  pointer-events: none;
+}
+.audit-v2 .hero-editorial h1.hero-catch {
+  color: #fffaf0;
+  font-size: clamp(20px, 6.1vw, 34px);
+  font-weight: 600;
+  line-height: 1.65;
+  letter-spacing: -.035em;
+  padding-block: 20px;
+  margin-bottom: 18px;
+}
+.audit-v2 .hero-catch::before {
+  background: #505943;
+}
+.audit-v2 .hero-catch > span {
+  font-size: 1em;
+  white-space: nowrap;
+}
+.audit-v2 .hero-catch br {
+  display: block;
+}
+.audit-v2 .catch-band--sub {
+  padding-block: 10px;
+}
+.audit-v2 .catch-band--sub::before {
+  inset-inline: -10px;
+  background: #e9e2d5;
+}
+.audit-v2 .quality .catch-band::before,
+.audit-v2 .repeat-copy .catch-band::before {
+  background: #dce2d4;
+}
+.audit-v2 .trial-offer .trial-heading.catch-band {
+  color: #302f2a;
+  font-weight: 600;
+}
+.audit-v2 .trial-heading.catch-band::before {
+  background: #e4d7bc;
+}
+@media (max-width: 360px) {
+  body.audit-v2 { --catch-bleed: 20px; }
+}
+@media (min-width: 601px) {
+  body.audit-v2 { --catch-bleed: 42px; }
+}
