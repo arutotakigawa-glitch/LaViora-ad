@@ -46,26 +46,16 @@ body.visual-v3 { --visual-olive: #62694f; --visual-rule: #d5c9b8; }
 .visual-v3 .method-philosophy { margin: 10px 0 18px; }
 .visual-v3 .method-principles { margin: 0; border: 0; }
 .visual-v3 .method-principle {
-  position: relative; display: grid; grid-template-columns: 42% minmax(0, 1fr);
-  gap: 16px; padding: 18px 0; border-top: 1px solid var(--visual-rule); align-items: center;
+  display: grid; grid-template-columns: 48px minmax(0, 1fr);
+  gap: 20px; padding: 18px 0; border-top: 1px solid var(--visual-rule); align-items: center;
 }
 .visual-v3 .method-principle:first-child { border: 0; padding-top: 0; }
-.visual-v3 .principle-photo { position: relative; width: 100%; margin: 0; }
-.visual-v3 .principle-photo > img { width: 100%; height: auto; aspect-ratio: 1.25; object-fit: cover; display: block; }
-.visual-v3 .principle-photo > span { position: absolute; top: 0; left: 0; background: #fffdf9; padding: 3px 8px; color: #7b6047; font-family: var(--serif); font-size: 16px; line-height: 1.4; }
-.visual-v3 .method-principle:not(:last-child)::after {
-  content: ""; position: absolute; width: 7px; height: 7px;
-  border-right: 1px solid #9c8e78; border-bottom: 1px solid #9c8e78;
-  transform: rotate(45deg); bottom: -4px; left: calc(21% - 4px); background: #f0ebe3; z-index: 1;
-}
 .visual-v3 .method-principle .method-principle-label {
-  display: flex; align-items: center; gap: 8px; font-family: var(--serif);
+  display: block; font-family: var(--serif);
   font-size: 22px; line-height: 1.5; margin: 0; font-weight: 500; letter-spacing: -.025em;
 }
-.visual-v3 .method-principle .principle-icon { display: block; flex: none; position: static; width: 30px; height: 30px; margin: 0; object-fit: contain; }
-.visual-v3 .principle-copy > .principle-subtitle { font-size: 10px; color: #846f56; margin: 4px 0 8px; line-height: 1.6; }
-.visual-v3 .principle-copy > p:last-child { font-size: 12px; line-height: 1.85; margin: 0; }
-.visual-v3 .principle-copy > p:last-child br { display: none; }
+.visual-v3 .method-principle .principle-icon { display: block; position: static; width: 48px; height: 48px; margin: 0; object-fit: contain; }
+.visual-v3 .principle-copy > p:last-child { font-size: 13px; line-height: 1.85; margin: 5px 0 0; }
 .visual-v3 .material-details { border-block: 1px solid var(--visual-rule); padding: 12px 0; font-size: 12px; line-height: 1.85; }
 .visual-v3 .material-details summary { cursor: pointer; color: #685b4c; padding: 2px 0; }
 .visual-v3 .material-details dl { margin: 14px 0 0; }
@@ -97,8 +87,6 @@ body.visual-v3 { --visual-olive: #62694f; --visual-rule: #d5c9b8; }
 .visual-v3 .process-grid li { display: flex; flex-direction: column; gap: 0; padding: 0; border: 0; min-width: 0; }
 .visual-v3 .process-grid figure { width: 100%; margin: 0 0 10px; grid-row: auto; }
 .visual-v3 .process-grid img { display: block; width: 100%; height: auto; aspect-ratio: 580 / 340; object-fit: cover; }
-.visual-v3 .process-grid .diagnosis-icon { width: 100%; height: auto; min-height: 0; aspect-ratio: 580 / 340; background: #e7e9df; display: grid; place-items: center; color: #62694f; }
-.visual-v3 .diagnosis-icon svg { width: 45px; height: 45px; }
 .visual-v3 .process-copy { display: block; padding: 0; }
 .visual-v3 .process-copy h3 { font-size: 14px; line-height: 1.65; margin: 3px 0 4px; font-weight: 600; }
 .visual-v3 .process-copy > span { font-size: 10px; color: #796955; }
@@ -125,14 +113,15 @@ body.visual-v3 { --visual-olive: #62694f; --visual-rule: #d5c9b8; }
 .visual-v3 summary:focus-visible { outline: 2px solid #62694f; outline-offset: 4px; }
 
 @media (max-width: 360px) {
-  .visual-v3 .skin-cause, .visual-v3 .method-principle { gap: 12px; }
+  .visual-v3 .skin-cause { gap: 12px; }
+  .visual-v3 .method-principle { gap: 16px; grid-template-columns: 42px minmax(0, 1fr); }
   .visual-v3 .skin-cause h3 { font-size: 15px; }
   .visual-v3 .skin-cause .skin-cause-label { font-size: 9px; }
   .visual-v3 .skin-cause-label span { font-size: 16px; margin-right: 2px; }
   .visual-v3 .cause-copy > p:last-child { font-size: 11px; }
   .visual-v3 .cause-illustration figcaption { font-size: 9px; }
-  .visual-v3 .method-principle .method-principle-label { font-size: 20px; gap: 5px; }
-  .visual-v3 .method-principle .principle-icon { width: 25px; height: 25px; }
+  .visual-v3 .method-principle .method-principle-label { font-size: 20px; }
+  .visual-v3 .method-principle .principle-icon { width: 42px; height: 42px; }
   .visual-v3 .vision-pillars dt { font-size: 11px; }
   .visual-v3 .types > div { padding: 12px 10px; }
   .visual-v3 .process-grid { gap: 22px 12px; }
